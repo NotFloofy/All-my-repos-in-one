@@ -139,14 +139,14 @@
                         }
                     });
 
-                }, 100); delay
+                }, 10); delay
 
             } catch (error) {
                 console.error("Error fetching repositories:", error);
             }
         }
 
-        setInterval(fetchRepos, 1000); // update every second (please dont overload github servers)
+        setInterval(fetchRepos, 60000); // update every minute again (because it refreshed the website every second which is annoying)
         window.onload = fetchRepos;
     </script>
 </body>
