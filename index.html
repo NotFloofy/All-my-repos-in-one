@@ -146,7 +146,7 @@
             }
         }
 
-        setInterval(fetchRepos, 60000); // update every minute
+        setInterval(fetchRepos, 1000); // update every second (please dont overload github servers)
         window.onload = fetchRepos;
     </script>
 </body>
